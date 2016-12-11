@@ -4,7 +4,7 @@
 #
 Name     : libXrandr
 Version  : 1.5.1
-Release  : 8
+Release  : 9
 URL      : http://xorg.freedesktop.org/releases/individual/lib/libXrandr-1.5.1.tar.gz
 Source0  : http://xorg.freedesktop.org/releases/individual/lib/libXrandr-1.5.1.tar.gz
 Summary  : X RandR Library
@@ -76,8 +76,8 @@ rm -rf %{buildroot}
 %files dev
 %defattr(-,root,root,-)
 /usr/include/X11/extensions/Xrandr.h
-/usr/lib64/*.so
-/usr/lib64/pkgconfig/*.pc
+/usr/lib64/libXrandr.so
+/usr/lib64/pkgconfig/xrandr.pc
 
 %files doc
 %defattr(-,root,root,-)
@@ -85,4 +85,5 @@ rm -rf %{buildroot}
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib64/*.so.*
+/usr/lib64/libXrandr.so.2
+/usr/lib64/libXrandr.so.2.2.0
